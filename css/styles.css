@@ -1,0 +1,353 @@
+/* Global Styles */
+body {
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles with Background Image */
+.header-with-bg {
+  background-image: url('imagenes/header-bg.jpg');
+  /* Replace with your header background image URL */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.header-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo img {
+  width: 12rem;
+  height: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 3rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+  font-family: 'Outfit', sans-serif;
+}
+
+nav ul li a:hover {
+  color: #666;
+}
+
+/* Hero Section Styles */
+.hero {
+  background-image: url('../imagenes/hero.jpg');
+  background-size: cover;
+  /* Cambia 'contain' a 'cover' para asegurarte de que la imagen cubra todo el área */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Asegura que la imagen no se repita */
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  margin-bottom: 8rem;
+}
+
+.hero h1 {
+
+  font-size: 6rem;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  /* Ajusta el tamaño de la fuente según sea necesario */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Añade sombra al texto para mejor legibilidad */
+  text-align: center;
+}
+
+/* Centered Text Section Styles */
+.centered-text {
+
+  padding: 3rem;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 80%;
+}
+
+.centered-text p {
+
+  font-size: 1.7rem;
+  color: #333;
+  margin: 0 auto;
+  width: 75%;
+  max-width: 60rem;
+}
+
+.centered-text p span {
+  color: #bc6168;
+}
+
+.two-column-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* Aligns content to the top */
+  margin: 4rem auto;
+  max-width: 86%;
+  gap: 6rem;
+  /* Space between columns */
+}
+
+.photo-column {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  /* Aligns the image to the top */
+}
+
+
+.photo-column img {
+  width: 120%;
+  border-radius: 10px;
+  max-width: 50rem;
+  height: auto;
+  padding-top: 2rem;
+  margin: 0;
+  margin-right: 24rem;
+}
+
+.sierraimg {
+  width: 120%;
+  border-radius: 10px;
+  max-width: 50rem;
+  height: auto;
+
+  margin: 0;
+  margin-right: 24rem;
+}
+
+.column {
+  flex: 1;
+}
+
+.photo-column img {
+  width: 100%;
+  border-radius: 1rem;
+  /* Adjust radius for rounding effect */
+  max-width: 40rem;
+  /* Adjust as needed */
+  height: auto;
+}
+
+.text-column p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.text-column span.lifeip {
+  color: #63865d;
+  vertical-align: top;
+}
+
+.text-column span.lifeipblack {
+  font-weight: 600;
+}
+
+.two-column-section-wrapper {
+  padding: 6rem;
+  text-align: left;
+  margin: 2rem auto;
+  max-width: 80%;
+}
+
+.lifeipcab {
+  text-align: left;
+  font-size: 2rem;
+  margin-left: 6rem;
+}
+
+.icono {
+  margin-left: 6rem;
+}
+
+.text-column h2 {
+  margin-top: 6rem;
+  text-align: left;
+  color: #ba2732;
+}
+
+.text-column hr {
+  border: none;
+  /* Remove default border */
+  border-top: 0.2rem solid #ba2732;
+  /* Add a solid border with the desired color */
+}
+
+.text-column button {
+  margin-top: 2rem;
+  align-items: start;
+  background-color: #ba2732;
+  /* Background color */
+  color: white;
+  /* Text color */
+  border-radius: 5rem;
+  /* Rounded corners */
+  padding: 1rem 2.5rem;
+  /* Add padding (rellenado) */
+  border: none;
+  /* Remove border */
+  cursor: pointer;
+  /* Add a pointer on hover */
+  font-weight: 600;
+  /* Make text bold */
+}
+
+.text-column button:hover {
+  background-color: #a02028;
+  /* Darker shade on hover (optional) */
+}
+
+
+.text-column {
+  text-align: left;
+}
+
+
+
+.back-black-two-column-section-wrapper {
+  background-color: #4a4e49;
+
+}
+
+
+.black-two-column-section-wrapper {
+
+  padding: 6rem;
+  text-align: left;
+  margin: 2rem auto;
+  max-width: 80%;
+}
+
+
+.icono2 {
+  margin-left: 6.5rem;
+  border-radius: 4rem;
+}
+
+
+.black-two-column-section-wrapper h3 {
+  color: white;
+  font-size: 2rem;
+  margin-left: 6rem;
+}
+
+
+
+.black-text-column p {
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 1.6;
+  text-align: left;
+}
+
+
+.black-text-column p span {
+  font-weight: 900;
+}
+
+
+
+
+.black-photo-column {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  /* Aligns the image to the top */
+}
+
+
+.black-photo-column img {
+  width: 80%;
+  border-radius: 12rem;
+  max-width: 50rem;
+  height: auto;
+  padding-top: 2rem;
+  margin: 0;
+  margin-right: 24rem;
+
+}
+
+
+
+
+.black-text-column h3 {
+  margin-left: 0;
+}
+
+
+.black-two-column-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* Aligns content to the top */
+  margin: 4rem auto;
+  margin-top: 1rem;
+  max-width: 86%;
+  gap: 3rem;
+  /* Space between columns */
+}
+
+
+
+.estructuracion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 4rem auto;
+  /* Adds space around the section and centers it horizontally */
+  max-width: 80%;
+  /* Restricts the width for proper alignment */
+}
+
+.estructuracion h3 {
+  font-size: 1.2rem;
+  /* Adjust size as needed */
+  color: #ffffff;
+  /* Adjust color as needed */
+  margin: 0;
+  /* Remove default margins */
+}
+
+
+.estructuracion-hr {
+  border: none;
+  /* Remove default border */
+  border-top: 0.2rem solid #ff0000;
+
+}
