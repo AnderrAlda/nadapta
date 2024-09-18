@@ -69,6 +69,7 @@ body {
   font-family: 'Outfit', sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 /* Header Styles with Background Image */
@@ -502,7 +503,6 @@ nav ul li a:hover {
   margin: 0;
 }
 
-
 .herramientasSeguimiento {
   margin: 12rem auto;
   /* Centra el contenedor verticalmente y añade margen superior e inferior */
@@ -523,7 +523,6 @@ nav ul li a:hover {
   font-size: 2rem;
   margin-top: 1rem;
 }
-
 
 
 /* Four Column Section Styles */
@@ -948,4 +947,240 @@ nav ul li a:hover {
 .copyright p {
   margin-top: 0;
   color: #666;
+}
+
+
+
+/* Mobile Devices (up to 768px) */
+@media (max-width: 768px) {
+
+  /* Adjust header styles */
+  .header-with-bg {
+    padding: 1rem;
+  }
+
+  .header-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 8rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  /* Adjust hero section styles */
+  .hero {
+    height: 60vh;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  /* Adjust two-column section styles */
+  .two-column-section {
+    flex-direction: column;
+  }
+
+  .photo-column {
+    margin-bottom: 2rem;
+  }
+
+  .photo-column img {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  /* Adjust other sections and elements as needed */
+  .centered-text p {
+    font-size: 1.4rem;
+    width: 90%;
+  }
+
+  .four-column-section {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .four-column-item {
+    max-width: calc(50% - 1rem);
+  }
+
+  .pre-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0.5rem 4rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .black-photo-column img {
+    width: 40%;
+    border-radius: 12rem;
+    max-width: 50rem;
+    height: auto;
+
+    margin: 0;
+    margin-right: 24rem;
+
+  }
+
+  .tablaCincoXtres {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    /* 3 rows of equal height */
+    grid-template-columns: repeat(2, 1fr);
+    /* 5 columns of equal width */
+    gap: 0;
+    /* Remove default gap */
+  }
+
+  .listado-section-wrapper {
+    padding: 0;
+    text-align: left;
+    margin: 2rem auto;
+    max-width: 68%;
+    padding-top: 0;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    justify-content: center;
+    /* Centering the footer-wrapper horizontally */
+    padding: 20px 0;
+    /* Optional: Add some vertical padding if needed */
+    background-color: #e5e5e5;
+    flex-direction: column;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+
+
+    gap: 2px;
+    background-color: #e5e5e5;
+    width: 72%;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+
+
+  }
+
+  /* Four Column Section Styles */
+  .herramientas-four-column-section-wrapper {
+    padding: 0;
+    /* Light background color for contrast */
+  }
+
+
+
+
+}
+
+/* Tablet Devices (between 768px and 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* Adjust header styles */
+  .header-with-bg {
+    padding: 2rem;
+  }
+
+  .header-container {
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    width: 10rem;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav ul li {
+    margin-right: 2rem;
+  }
+
+  /* Adjust hero section styles */
+  .hero {
+    height: 70vh;
+  }
+
+  .hero h1 {
+    font-size: 5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  /* Adjust two-column section styles */
+  .two-column-section {
+    flex-direction: row;
+  }
+
+  .photo-column {
+    margin-bottom: 0;
+  }
+
+  .photo-column img {
+    width: 100%;
+    max-width: 40rem;
+    margin-right: 2rem;
+  }
+
+  /* Adjust other sections and elements as needed */
+  .centered-text p {
+    font-size: 1.6rem;
+    width: 80%;
+  }
+
+  .four-column-section {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .four-column-item {
+    max-width: calc(25% - 2rem);
+  }
+}
+
+/* Additional Adjustments for Images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Ensure images do not overflow the viewport */
+img {
+  max-width: 100%;
+  height: auto;
 }
