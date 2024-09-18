@@ -1148,6 +1148,8 @@ nav ul li a:hover {
     border-radius: 4rem;
   }
 
+
+
   .black-two-column-section {
     display: flex;
     justify-content: center;
@@ -1330,4 +1332,13 @@ img {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.centrado {
+  max-width: none;
+  /* Override max-width */
+  display: inline-block;
+  /* Or any other display property you need */
+  height: auto;
+  /* Maintain aspect ratio if needed */
 }
