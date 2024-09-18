@@ -1,3 +1,69 @@
+/* Pre-header Styles */
+.pre-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0.5rem 4rem;
+  width: 70%;
+  box-sizing: border-box;
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+.pre-header-flex {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.buscar {
+  width: 20px !important;
+  height: 20px !important;
+  position: absolute;
+  left: 15px;
+  /* Position the icon inside the input */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pre-header p {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+.search-container {
+  position: relative;
+}
+
+.pre-header input[type="text"] {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  padding-left: 40px;
+  /* Add padding to the left for the icon */
+  cursor: text;
+  font-family: 'Outfit', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pre-header input[type="text"]::placeholder {
+  color: #999;
+}
+
+.pre-header input[type="text"]:hover {
+  background-color: #e0e0e0;
+}
+
+/* Ensure pre-header image is aligned properly */
+.pre-header img {
+  height: auto;
+  width: auto;
+}
+
+
 /* Global Styles */
 body {
   font-family: 'Outfit', sans-serif;
@@ -8,7 +74,6 @@ body {
 /* Header Styles with Background Image */
 .header-with-bg {
   background-image: url('imagenes/header-bg.jpg');
-  /* Replace with your header background image URL */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -119,6 +184,7 @@ nav ul li a:hover {
   max-width: 86%;
   gap: 6rem;
   /* Space between columns */
+  margin-top: 0;
 }
 
 .photo-column {
@@ -183,6 +249,7 @@ nav ul li a:hover {
   text-align: left;
   margin: 2rem auto;
   max-width: 80%;
+  padding-top: 0;
 }
 
 .lifeipcab {
@@ -251,6 +318,7 @@ nav ul li a:hover {
   text-align: left;
   margin: 2rem auto;
   max-width: 80%;
+  padding-bottom: 0;
 }
 
 
@@ -267,6 +335,9 @@ nav ul li a:hover {
 }
 
 
+.black-text-column {
+  padding-left: 6.5rem;
+}
 
 .black-text-column p {
   font-size: 1rem;
@@ -283,20 +354,14 @@ nav ul li a:hover {
 
 
 
-.black-photo-column {
-  flex: 1;
-  display: flex;
-  align-items: flex-start;
-  /* Aligns the image to the top */
-}
 
 
 .black-photo-column img {
-  width: 80%;
+  width: 100%;
   border-radius: 12rem;
   max-width: 50rem;
   height: auto;
-  padding-top: 2rem;
+
   margin: 0;
   margin-right: 24rem;
 
@@ -315,39 +380,572 @@ nav ul li a:hover {
   justify-content: center;
   align-items: flex-start;
   /* Aligns content to the top */
-  margin: 4rem auto;
+
   margin-top: 1rem;
   max-width: 86%;
-  gap: 3rem;
+  gap: 6rem;
   /* Space between columns */
 }
 
 
-
 .estructuracion {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  margin: 4rem auto;
-  /* Adds space around the section and centers it horizontally */
-  max-width: 80%;
-  /* Restricts the width for proper alignment */
+  /* Center-aligns text inside this section */
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .estructuracion h3 {
-  font-size: 1.2rem;
-  /* Adjust size as needed */
+  margin: 0 auto;
+  /* Centers the <h3> element horizontally */
   color: #ffffff;
-  /* Adjust color as needed */
-  margin: 0;
-  /* Remove default margins */
+  /* Apply your desired text color */
+  margin-bottom: 1rem;
+
 }
 
 
-.estructuracion-hr {
+.estructuracion p {
+  margin: 0 auto;
+  /* Centers the <h3> element horizontally */
+  color: #ffffff;
+  /* Apply your desired text color */
+  margin-bottom: 2rem;
+}
+
+.estructuracion button {
+  margin-top: 2rem;
+  align-items: start;
+  background-color: #ba2732;
+  /* Background color */
+  color: white;
+  /* Text color */
+  border-radius: 5rem;
+  /* Rounded corners */
+  padding: 1rem 2.5rem;
+  /* Add padding (rellenado) */
+  border: none;
+  /* Remove border */
+  cursor: pointer;
+  /* Add a pointer on hover */
+  font-weight: 600;
+  /* Make text bold */
+  margin-bottom: 4rem;
+}
+
+
+.estructuracion button:hover {
+  background-color: #a02028;
+  /* Darker shade on hover (optional) */
+}
+
+
+
+
+.estructuracion hr {
   border: none;
   /* Remove default border */
-  border-top: 0.2rem solid #ff0000;
+  border-top: 0.2rem solid #ffffff;
+  /* Add a solid border with the desired color */
+  width: 68%;
+}
 
+
+/* Four Column Section Styles */
+.four-column-section-wrapper {
+  padding: 4rem 18rem;
+  /* Light background color for contrast */
+}
+
+.four-column-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  /* Space between columns */
+  justify-content: center;
+  /* Center columns */
+}
+
+.four-column-item {
+  flex: 1;
+  max-width: calc(25% - 2rem);
+  /* Adjust width of columns */
+
+  /* Background color for visibility */
+  border-radius: 1rem;
+  /* Rounded corners */
+  overflow: hidden;
+  /* Subtle shadow */
+  text-align: center;
+  /* Center text */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* Arrange items vertically */
+  justify-content: center;
+}
+
+.four-column-item img {
+  width: 20%;
+  /* Adjust this value to make SVG images larger or smaller */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto;
+  /* Center the image horizontally */
+}
+
+.four-column-item p {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+
+.herramientasSeguimiento {
+  margin: 12rem auto;
+  /* Centra el contenedor verticalmente y añade margen superior e inferior */
+  text-align: center;
+  /* Centra el texto dentro del contenedor */
+  max-width: 80%;
+  /* Limita el ancho del contenedor para que el texto no se estire demasiado */
+}
+
+.herramientasSeguimiento p {
+  margin: 0 auto;
+  /* Centra el párrafo dentro del contenedor */
+  max-width: 70%;
+  /* Opcional: Limita el ancho del párrafo para mejorar la legibilidad */
+}
+
+.herramientasSeguimiento h3 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+
+
+/* Four Column Section Styles */
+.herramientas-four-column-section-wrapper {
+  padding: 4rem 18rem;
+  /* Light background color for contrast */
+}
+
+.herramientas-four-column-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  /* Space between columns */
+  justify-content: center;
+  /* Center columns */
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.herramientas-four-column-item {
+  flex: 1;
+  max-width: calc(25% - 2rem);
+  /* Adjust width of columns */
+  border-radius: 1rem;
+  /* Rounded corners */
+  overflow: hidden;
+  /* Subtle shadow */
+  text-align: center;
+  /* Center text */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* Arrange items vertically */
+  justify-content: center;
+  border: 0px solid #ccc;
+  /* Add a border with color #ccc */
+  box-shadow: 0 4px 8px rgba(32, 32, 32, 0.4);
+  /* Add a shadow with slight offset and blur */
+  padding: 4rem 0rem 4rem 0rem;
+}
+
+.herramientas-four-column-item img {
+  width: 20%;
+  /* Adjust this value to make SVG images larger or smaller */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto;
+  /* Center the image horizontally */
+}
+
+.herramientas-four-column-item p {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #000000;
+  margin: 0;
+}
+
+.herramientas-four-column-item p span {
+  color: #98b493;
+}
+
+
+.negrita {
+  font-weight: 800;
+}
+
+
+.rosa {
+  color: #ba2732 !important;
+  font-weight: 800;
+  font-size: 1.2rem !important;
+
+}
+
+.verde {
+  color: #98b493 !important;
+}
+
+
+
+.grafica-section-wrapper {
+  padding: 6rem;
+  text-align: left;
+  margin: 2rem auto;
+  max-width: 68%;
+  padding-top: 0;
+}
+
+.grafica-section-wrapper div {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+.listado-section-wrapper {
+  padding: 6rem;
+  text-align: left;
+  margin: 2rem auto;
+  max-width: 68%;
+  padding-top: 0;
+}
+
+.tablaCincoXtres {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  /* 3 rows of equal height */
+  grid-template-columns: repeat(5, 1fr);
+  /* 5 columns of equal width */
+  gap: 0;
+  /* Remove default gap */
+}
+
+/* Style the cells */
+.tablaCincoXtres>div {
+  border-left: 1px solid #ccc;
+  /* Border on the left side of each cell */
+
+  /* Background color for visibility */
+  display: flex;
+  /* Center content inside each grid item */
+  align-items: start;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 2rem 0rem 2rem 2rem;
+  margin-bottom: 3rem;
+}
+
+
+
+.tablaCincoXtres>div:nth-child(5n) {
+  border-right: 1px solid #ccc;
+  /* Add right border to the last cell in each row */
+}
+
+.tablaCincoXtres p {
+  margin: 0;
+}
+
+.tablaCincoXtres button {
+  margin-top: 1rem;
+  color: #ba2732;
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.tablaCincoXtres button:hover {
+  color: #a22a2f;
+}
+
+
+
+
+.botonSVG {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-weight: 600;
+}
+
+.botonSVG img {
+  width: 25%;
+}
+
+
+/* Hero Section Styles */
+.consulta {
+  background-image: url('../imagenes/consulta.jpg');
+  background-size: cover;
+  /* Cambia 'contain' a 'cover' para asegurarte de que la imagen cubra todo el área */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Asegura que la imagen no se repita */
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  margin-bottom: 8rem;
+}
+
+.consulta h3 {
+
+  font-size: 2rem;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.consulta p {
+
+  /* Ajusta el tamaño de la fuente según sea necesario */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Añade sombra al texto para mejor legibilidad */
+  text-align: center;
+}
+
+
+.consulta button {
+  margin-top: 2rem;
+  align-items: start;
+  background-color: #ba2732;
+  /* Background color */
+  color: white;
+  /* Text color */
+  border-radius: 5rem;
+  /* Rounded corners */
+  padding: 1rem 2.5rem;
+  /* Add padding (rellenado) */
+  border: none;
+  /* Remove border */
+  cursor: pointer;
+  /* Add a pointer on hover */
+  font-weight: 600;
+  /* Make text bold */
+}
+
+
+
+.consulta button:hover {
+  background-color: #a02028;
+}
+
+/* Four Column Section Styles */
+.six-column-section-wrapper {
+  padding: 2rem 1rem;
+
+}
+
+.six-column-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* Espacio entre columnas */
+  justify-content: center;
+  /* Centrar columnas */
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.six-column-item {
+  flex: 1;
+  max-width: calc(33.333% - 2rem);
+  /* Ajustar el ancho para 3 elementos por fila */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Distribuir el espacio uniformemente */
+  align-items: center;
+  /* Centrar elementos horizontalmente */
+  padding: 1rem;
+  /* Agregar padding alrededor del contenido */
+
+
+  /* Sombra sutil */
+  background-color: #fff;
+  /* Color de fondo para los elementos */
+  box-sizing: border-box;
+  /* Incluir padding y borde en el cálculo del ancho y alto del elemento */
+  min-height: 200px;
+  /* Establecer una altura mínima para garantizar la alineación */
+}
+
+.six-column-item img {
+  width: 70%;
+  /* Hacer que la imagen ocupe todo el ancho de su contenedor */
+  height: auto;
+  /* Mantener la relación de aspecto */
+  object-fit: cover;
+  /* Asegurar que las imágenes cubran el contenedor sin distorsionar la relación de aspecto */
+  display: block;
+  margin-bottom: 0.5rem;
+  /* Espacio entre la imagen y el texto */
+}
+
+.six-column-item p {
+  font-size: 0.9rem;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+  /* Centrar el texto horizontalmente */
+  line-height: 1.4;
+  /* Asegurar una altura de línea consistente */
+}
+
+/* Estilos adicionales para asegurar alineación vertical consistente */
+.six-column-item .rosa {
+  font-weight: bold;
+  color: #ff69b4;
+  /* Ejemplo de color rosa para la clase 'rosa' */
+  margin-bottom: 0.5rem;
+  /* Espacio entre el texto rosa y el párrafo siguiente */
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  /* Centering the footer-wrapper horizontally */
+  padding: 20px 0;
+  /* Optional: Add some vertical padding if needed */
+  background-color: #e5e5e5;
+}
+
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  /* Third column is twice as wide as the first two */
+  gap: 2px;
+  background-color: #e5e5e5;
+  width: 72%;
+}
+
+.footer-item {
+  background-color: #e5e5e5;
+
+  /* Color de fondo de cada columna */
+
+  /* Borde entre columnas */
+  padding: 18px;
+  text-align: start;
+  margin-left: 2rem;
+}
+
+.footer-item-flex {
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  justify-content: space-between;
+
+}
+
+
+
+.footer-item-flex-botonSVG {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-weight: 600;
+  width: 20%;
+  background-color: #e5e5e5;
+  border: 0px;
+  color: #ba2732;
+  font-size: 1rem;
+  cursor: pointer;
+
+}
+
+.footer-item-flex-botonSVG img {
+  width: 40%;
+}
+
+
+.footer-item hr {
+  border: none;
+  /* Remove default border */
+  border-top: 0.1rem solid #ba2732;
+  /* Add a solid border with the desired color */
+}
+
+.footer-item-flex p {
+  font-size: 1rem !important;
+  margin: 0;
+}
+
+.gris {
+  border-top: 0.1rem solid #979797 !important;
+}
+
+.border-left-right {
+  border-left: 0.1rem solid #979797;
+  /* Left border */
+  border-right: 0.1rem solid #979797;
+  /* Right border */
+}
+
+.footer-item-list {
+  display: flex !important;
+  gap: 2rem !important;
+  flex-direction: column;
+}
+
+.contacto {
+  margin-top: 4rem;
+}
+
+.contacto p {
+  margin: 0;
+  margin-bottom: 0.4rem;
+  font-size: 1rem !important;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.logos img {
+  width: 70%;
+  max-width: 100%;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20rem;
+  margin-right: 20rem;
+
+
+}
+
+.copyright p {
+  margin-top: 0;
+  color: #666;
 }
