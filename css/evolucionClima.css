@@ -134,7 +134,7 @@ nav ul li a:hover {
   align-items: center;
   color: white;
   flex-direction: column;
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
 }
 
 .hero h1 {
@@ -505,7 +505,7 @@ nav ul li a:hover {
 
 .herramientasSeguimiento {
   margin: 12rem auto;
-  /* Centra el contenedor verticalmente y añade margen superior e inferior */
+  margin-top: 4rem;
   text-align: center;
   /* Centra el texto dentro del contenedor */
   max-width: 80%;
@@ -1385,4 +1385,77 @@ img {
 
 .dropdown:hover .dropbtn {
   background-color: #ddd;
+}
+
+
+
+
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  font-size: 18px;
+  background-color: white;
+}
+
+.breadcrumb li {
+  margin-right: 8px;
+}
+
+.breadcrumb li+li:before {
+  content: '>';
+  margin-right: 8px;
+  color: #888;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #6d6d6d;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbXcombobox {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 16rem;
+  padding-right: 16rem;
+  padding-bottom: 2rem;
+}
+
+.breadcrumbXcombobox div {
+  display: flex;
+  gap: 2rem;
+
+}
+
+.grafica {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.temperaturaMedia {
+  margin-left: 20rem;
+  margin-right: 20rem;
+  margin-bottom: 4rem;
+}
+
+.temperaturaMedia div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.temperaturaMedia h3 {
+  font-weight: bold;
+  color: #ba2732;
+  font-size: 2rem;
+}
+
+.temperaturaMedia p {
+  font-size: 1.5rem;
 }

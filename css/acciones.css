@@ -122,7 +122,7 @@ nav ul li a:hover {
 
 /* Hero Section Styles */
 .hero {
-  background-image: url('../imagenes/hero.jpg');
+  background-image: url('../imagenes/accionesHero.jpg');
   background-size: cover;
   /* Cambia 'contain' a 'cover' para asegurarte de que la imagen cubra todo el área */
   background-position: center;
@@ -134,7 +134,7 @@ nav ul li a:hover {
   align-items: center;
   color: white;
   flex-direction: column;
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
 }
 
 .hero h1 {
@@ -154,357 +154,124 @@ nav ul li a:hover {
   text-align: center;
 }
 
-/* Centered Text Section Styles */
-.centered-text {
 
-  padding: 3rem;
-  text-align: center;
-  margin: 2rem auto;
-  max-width: 80%;
-}
 
-.centered-text p {
-
-  font-size: 1.7rem;
-  color: #333;
-  margin: 0 auto;
-  width: 75%;
-  max-width: 60rem;
-}
-
-.centered-text p span {
-  color: #bc6168;
-}
-
-.two-column-section {
+.breadcrumb {
+  list-style: none;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  /* Aligns content to the top */
-  margin: 4rem auto;
-  max-width: 86%;
-  gap: 6rem;
-  /* Space between columns */
-  margin-top: 0;
+  font-size: 18px;
+  background-color: white;
 }
 
-.photo-column {
-  flex: 1;
-  display: flex;
-  align-items: flex-start;
-  /* Aligns the image to the top */
+.breadcrumb li {
+  margin-right: 8px;
 }
 
-
-.photo-column img {
-  width: 120%;
-  border-radius: 10px;
-  max-width: 50rem;
-  height: auto;
-  padding-top: 2rem;
-  margin: 0;
-  margin-right: 24rem;
+.breadcrumb li+li:before {
+  content: '>';
+  margin-right: 8px;
+  color: #888;
 }
 
-.sierraimg {
-  width: 120%;
-  border-radius: 10px;
-  max-width: 50rem;
-  height: auto;
-
-  margin: 0;
-  margin-right: 24rem;
+.breadcrumb a {
+  text-decoration: none;
+  color: #6d6d6d;
 }
 
-.column {
-  flex: 1;
+.breadcrumb a:hover {
+  text-decoration: underline;
 }
 
-.photo-column img {
-  width: 100%;
-  border-radius: 1rem;
-  /* Adjust radius for rounding effect */
-  max-width: 40rem;
-  /* Adjust as needed */
-  height: auto;
+.combobox {
+  position: relative;
+  display: inline-block;
+  width: 200px;
 }
 
-.text-column p {
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.6;
-  text-align: left;
-}
-
-.text-column span.lifeip {
-  color: #63865d;
-  vertical-align: top;
-}
-
-.text-column span.lifeipblack {
-  font-weight: 600;
-}
-
-.two-column-section-wrapper {
-  padding: 6rem;
-  text-align: left;
-  margin: 2rem auto;
-  max-width: 80%;
-  padding-top: 0;
-}
-
-.lifeipcab {
-  text-align: left;
-  font-size: 2rem;
-  margin-left: 6rem;
-}
-
-.icono {
-  margin-left: 6rem;
-}
-
-.text-column h2 {
-  margin-top: 6rem;
-  text-align: left;
-  color: #ba2732;
-}
-
-.text-column hr {
+.combobox input {
+  width: calc(100% - 30px);
+  padding: 8px;
+  box-sizing: border-box;
+  pointer-events: none;
+  background-color: #ffffff;
   border: none;
-  /* Remove default border */
-  border-top: 0.2rem solid #ba2732;
-  /* Add a solid border with the desired color */
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  font-size: 16px;
 }
 
-.text-column button {
-  margin-top: 2rem;
-  align-items: start;
-  background-color: #ba2732;
-  /* Background color */
-  color: white;
-  /* Text color */
-  border-radius: 5rem;
-  /* Rounded corners */
-  padding: 1rem 2.5rem;
-  /* Add padding (rellenado) */
+.combobox button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 30px;
+  background-color: transparent;
   border: none;
-  /* Remove border */
   cursor: pointer;
-  /* Add a pointer on hover */
-  font-weight: 600;
-  /* Make text bold */
+  font-size: 16px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
 }
 
-.text-column button:hover {
-  background-color: #a02028;
-  /* Darker shade on hover (optional) */
-}
-
-
-.text-column {
-  text-align: left;
-}
-
-
-
-.back-black-two-column-section-wrapper {
-  background-color: #4a4e49;
-
-}
-
-
-.black-two-column-section-wrapper {
-
-  padding: 6rem;
-  text-align: left;
-  margin: 2rem auto;
-  max-width: 80%;
-  padding-bottom: 0;
-}
-
-
-.icono2 {
-  margin-left: 6.5rem;
-  border-radius: 4rem;
-}
-
-
-.black-two-column-section-wrapper h3 {
-  color: white;
-  font-size: 2rem;
-  margin-left: 6rem;
-}
-
-
-.black-text-column {
-  padding-left: 6.5rem;
-}
-
-.black-text-column p {
-  font-size: 1rem;
-  color: #ffffff;
-  line-height: 1.6;
-  text-align: left;
-}
-
-
-.black-text-column p span {
-  font-weight: 900;
-}
-
-
-
-
-
-
-.black-photo-column img {
-  width: 100%;
-  border-radius: 12rem;
-  max-width: 50rem;
-  height: auto;
-
+.combobox ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
-  margin-right: 24rem;
-
+  max-height: 150px;
+  overflow-y: auto;
+  position: absolute;
+  top: 100%;
+  /* Position the list below the input */
+  left: 0;
+  width: 100%;
+  display: none;
+  background-color: #fff;
+  z-index: 1000;
+  /* Make sure the dropdown is on top of other content */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
-.black-text-column h3 {
-  margin-left: 0;
-}
-
-
-.black-two-column-section {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  /* Aligns content to the top */
-
-  margin-top: 1rem;
-  max-width: 86%;
-  gap: 6rem;
-  /* Space between columns */
-}
-
-
-.estructuracion {
-  text-align: center;
-  /* Center-aligns text inside this section */
-  padding-top: 0;
-  margin-top: 0;
-}
-
-.estructuracion h3 {
-  margin: 0 auto;
-  /* Centers the <h3> element horizontally */
-  color: #ffffff;
-  /* Apply your desired text color */
-  margin-bottom: 1rem;
-
-}
-
-
-.estructuracion p {
-  margin: 0 auto;
-  /* Centers the <h3> element horizontally */
-  color: #ffffff;
-  /* Apply your desired text color */
-  margin-bottom: 2rem;
-}
-
-.estructuracion button {
-  margin-top: 2rem;
-  align-items: start;
-  background-color: #ba2732;
-  /* Background color */
-  color: white;
-  /* Text color */
-  border-radius: 5rem;
-  /* Rounded corners */
-  padding: 1rem 2.5rem;
-  /* Add padding (rellenado) */
-  border: none;
-  /* Remove border */
+.combobox ul li {
+  padding: 8px;
   cursor: pointer;
-  /* Add a pointer on hover */
-  font-weight: 600;
-  /* Make text bold */
+}
+
+.combobox ul li:hover {
+  background-color: #f0f0f0;
+}
+
+
+.breadcrumbXcombobox {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 16rem;
+  padding-right: 16rem;
+  padding-bottom: 8rem;
+}
+
+.breadcrumbXcombobox div {
+  display: flex;
+  gap: 2rem;
+
+}
+
+.grafica {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 4rem;
 }
 
 
-.estructuracion button:hover {
-  background-color: #a02028;
-  /* Darker shade on hover (optional) */
-}
 
-
-
-
-.estructuracion hr {
-  border: none;
-  /* Remove default border */
-  border-top: 0.2rem solid #ffffff;
-  /* Add a solid border with the desired color */
-  width: 68%;
-}
-
-
-/* Four Column Section Styles */
-.four-column-section-wrapper {
-  padding: 4rem 18rem;
-  /* Light background color for contrast */
-}
-
-.four-column-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  /* Space between columns */
-  justify-content: center;
-  /* Center columns */
-}
-
-.four-column-item {
-  flex: 1;
-  max-width: calc(25% - 2rem);
-  /* Adjust width of columns */
-
-  /* Background color for visibility */
-  border-radius: 1rem;
-  /* Rounded corners */
-  overflow: hidden;
-  /* Subtle shadow */
-  text-align: center;
-  /* Center text */
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  /* Arrange items vertically */
-  justify-content: center;
-}
-
-.four-column-item img {
-  width: 20%;
-  /* Adjust this value to make SVG images larger or smaller */
-  height: auto;
-  /* Maintain aspect ratio */
-  display: block;
-  margin: 0 auto;
-  /* Center the image horizontally */
-}
-
-.four-column-item p {
-  padding: 1rem;
-  font-size: 1rem;
-  color: #ffffff;
-  margin: 0;
-}
 
 .herramientasSeguimiento {
   margin: 12rem auto;
+  margin-top: 0;
+  margin-bottom: 4rem;
   /* Centra el contenedor verticalmente y añade margen superior e inferior */
   text-align: center;
   /* Centra el texto dentro del contenedor */
@@ -604,224 +371,6 @@ nav ul li a:hover {
 
 
 
-.grafica-section-wrapper {
-  padding: 6rem;
-  text-align: left;
-  margin: 2rem auto;
-  max-width: 68%;
-  padding-top: 0;
-}
-
-.grafica-section-wrapper div {
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-
-.listado-section-wrapper {
-  padding: 6rem;
-  text-align: left;
-  margin: 2rem auto;
-  max-width: 68%;
-  padding-top: 0;
-}
-
-.tablaCincoXtres {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  /* 3 rows of equal height */
-  grid-template-columns: repeat(5, 1fr);
-  /* 5 columns of equal width */
-  gap: 0;
-  /* Remove default gap */
-}
-
-/* Style the cells */
-.tablaCincoXtres>div {
-  border-left: 1px solid #ccc;
-  /* Border on the left side of each cell */
-
-  /* Background color for visibility */
-  display: flex;
-  /* Center content inside each grid item */
-  align-items: start;
-  justify-content: space-around;
-  flex-direction: column;
-  padding: 2rem 0rem 2rem 2rem;
-  margin-bottom: 3rem;
-}
-
-
-
-.tablaCincoXtres>div:nth-child(5n) {
-  border-right: 1px solid #ccc;
-  /* Add right border to the last cell in each row */
-}
-
-.tablaCincoXtres p {
-  margin: 0;
-}
-
-.tablaCincoXtres button {
-  margin-top: 1rem;
-  color: #ba2732;
-  background-color: transparent;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.tablaCincoXtres button:hover {
-  color: #a22a2f;
-}
-
-
-
-
-.botonSVG {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  font-weight: 600;
-}
-
-.botonSVG img {
-  width: 25%;
-}
-
-
-/* Hero Section Styles */
-.consulta {
-  background-image: url('../imagenes/consulta.jpg');
-  background-size: cover;
-  /* Cambia 'contain' a 'cover' para asegurarte de que la imagen cubra todo el área */
-  background-position: center;
-  background-repeat: no-repeat;
-  /* Asegura que la imagen no se repita */
-  height: 40vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  flex-direction: column;
-  margin-bottom: 8rem;
-}
-
-.consulta h3 {
-
-  font-size: 2rem;
-  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-  text-align: center;
-  font-weight: 900;
-  margin-bottom: 0;
-}
-
-.consulta p {
-
-  /* Ajusta el tamaño de la fuente según sea necesario */
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  /* Añade sombra al texto para mejor legibilidad */
-  text-align: center;
-}
-
-
-.consulta button {
-  margin-top: 2rem;
-  align-items: start;
-  background-color: #ba2732;
-  /* Background color */
-  color: white;
-  /* Text color */
-  border-radius: 5rem;
-  /* Rounded corners */
-  padding: 1rem 2.5rem;
-  /* Add padding (rellenado) */
-  border: none;
-  /* Remove border */
-  cursor: pointer;
-  /* Add a pointer on hover */
-  font-weight: 600;
-  /* Make text bold */
-}
-
-
-
-.consulta button:hover {
-  background-color: #a02028;
-}
-
-/* Four Column Section Styles */
-.six-column-section-wrapper {
-  padding: 2rem 1rem;
-
-}
-
-.six-column-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  /* Espacio entre columnas */
-  justify-content: center;
-  /* Centrar columnas */
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.six-column-item {
-  flex: 1;
-  max-width: calc(33.333% - 2rem);
-  /* Ajustar el ancho para 3 elementos por fila */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /* Distribuir el espacio uniformemente */
-  align-items: center;
-  /* Centrar elementos horizontalmente */
-  padding: 1rem;
-  /* Agregar padding alrededor del contenido */
-
-
-  /* Sombra sutil */
-  background-color: #fff;
-  /* Color de fondo para los elementos */
-  box-sizing: border-box;
-  /* Incluir padding y borde en el cálculo del ancho y alto del elemento */
-  min-height: 200px;
-  /* Establecer una altura mínima para garantizar la alineación */
-}
-
-.six-column-item img {
-  width: 70%;
-  /* Hacer que la imagen ocupe todo el ancho de su contenedor */
-  height: auto;
-  /* Mantener la relación de aspecto */
-  object-fit: cover;
-  /* Asegurar que las imágenes cubran el contenedor sin distorsionar la relación de aspecto */
-  display: block;
-  margin-bottom: 0.5rem;
-  /* Espacio entre la imagen y el texto */
-}
-
-.six-column-item p {
-  font-size: 0.9rem;
-  color: #000000;
-  margin: 0;
-  text-align: center;
-  /* Centrar el texto horizontalmente */
-  line-height: 1.4;
-  /* Asegurar una altura de línea consistente */
-}
-
-/* Estilos adicionales para asegurar alineación vertical consistente */
-.six-column-item .rosa {
-  font-weight: bold;
-  color: #ff69b4;
-  /* Ejemplo de color rosa para la clase 'rosa' */
-  margin-bottom: 0.5rem;
-  /* Espacio entre el texto rosa y el párrafo siguiente */
-}
 
 .footer-wrapper {
   display: flex;
