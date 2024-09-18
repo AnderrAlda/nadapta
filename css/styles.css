@@ -1092,11 +1092,6 @@ nav ul li a:hover {
 
   }
 
-  /* Four Column Section Styles */
-  .herramientas-four-column-section-wrapper {
-    padding: 0;
-    /* Light background color for contrast */
-  }
 
 
   /* Global Styles */
@@ -1107,7 +1102,154 @@ nav ul li a:hover {
     overflow-x: hidden;
   }
 
+  .black-photo-column img {
+    width: 40%;
+    border-radius: 12rem;
+    max-width: 50rem;
+    height: auto;
 
+    margin: 0;
+    margin-right: 0;
+
+  }
+
+
+  .pre-header-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+
+  .two-column-section-wrapper {
+    padding: 2rem;
+    text-align: left;
+    margin: 2rem auto;
+    max-width: 80%;
+    padding-top: 0;
+  }
+
+
+  .lifeipcab {
+    text-align: left;
+    font-size: 2rem;
+    margin-left: 2rem;
+  }
+
+  .icono {
+    margin-left: 2rem;
+  }
+
+  .icono2 {
+    margin-left: 0rem;
+    border-radius: 4rem;
+  }
+
+  .black-two-column-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Aligns content to the top */
+
+    margin-top: 1rem;
+    max-width: 100%;
+
+    /* Space between columns */
+  }
+
+  .black-text-column {
+    padding-left: 2rem;
+  }
+
+  .black-two-column-section-wrapper {
+
+    padding: 6rem;
+    text-align: left;
+    margin: 0rem auto;
+    max-width: 100%;
+    padding-bottom: 0;
+  }
+
+  .logo img {
+    width: 8rem;
+    margin-bottom: 1rem;
+  }
+
+  .four-column-section-wrapper {
+    padding: 2rem 2rem;
+    /* Adjust padding for even smaller screens */
+  }
+
+  .four-column-item {
+    max-width: 100%;
+    /* Single column on very small screens */
+  }
+
+  .four-column-item img {
+    width: 30%;
+    /* Increase image size for smaller screens */
+  }
+
+  .four-column-section-wrapper {
+    padding: 2rem;
+    /* Adjust padding for smaller screens */
+  }
+
+  .four-column-item {
+    flex: 1 1 100%;
+    /* Single column on very small screens */
+  }
+
+  .four-column-item img {
+    width: 30%;
+    /* Increase image size for smaller screens */
+  }
+
+  .herramientas-four-column-section {
+    flex-direction: column;
+    /* Stack items vertically */
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .herramientas-four-column-item {
+    max-width: 100%;
+    /* Full width for each item on mobile */
+  }
+
+  .herramientas-four-column-item img {
+    width: 50%;
+    /* Adjust image size for mobile */
+  }
+
+  /* Four Column Section Styles */
+  .herramientas-four-column-section-wrapper {
+    padding: 0;
+    /* Light background color for contrast */
+  }
+
+  .six-column-item {
+    max-width: 100%;
+    /* Ajustar el ancho a 100% para dispositivos móviles */
+    flex-basis: 100%;
+    /* Permitir que los elementos ocupen toda la fila */
+  }
+
+  .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .logos img {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 /* Tablet Devices (between 768px and 1024px) */
@@ -1170,14 +1312,12 @@ nav ul li a:hover {
     width: 80%;
   }
 
-  .four-column-section {
-    flex-wrap: wrap;
-    gap: 2rem;
+  .four-column-item {
+    flex: 1 1 calc(50% - 2rem);
+    /* Two columns on smaller screens */
   }
 
-  .four-column-item {
-    max-width: calc(25% - 2rem);
-  }
+
 }
 
 /* Additional Adjustments for Images */
